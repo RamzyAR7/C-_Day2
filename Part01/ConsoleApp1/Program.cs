@@ -220,6 +220,26 @@ namespace ConsoleApp1
             #endregion
 
             #region Problem9
+            int x = 5;
+
+            //postfix
+            Console.WriteLine(x++);//5
+            Console.WriteLine(x); //6
+
+            //prefix
+            Console.WriteLine(++x); //7
+            Console.WriteLine(x); //7
+
+            /**
+             * Given the code below, what is the value of x after execution? Explain why
+             *  int x = 5;
+             *  int y = ++x + x++;
+             *  000000000000000000000000000000000000000000
+             *  first x = 5
+             *  in ++x prefix ==> x = 6  do increment first and use it in 2st step
+             *  in x++ postfix ==> x = 6 use it first and do increment in 2st step
+             *  in final  x = 7 , y  = 6 + 6 = 12
+             */
 
             #endregion
 
